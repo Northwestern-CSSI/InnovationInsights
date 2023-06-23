@@ -17,7 +17,7 @@ const BackgroundPage: FC<BackgroundPageProps> = (props) => {
 
   return (
     <>
-      <MyPanel viewTitle="Dual Frontier of Science and Technology" width={''} height={'auto'} panelHeaderHeight={60} id='backgroundPage'>
+      <MyPanel viewTitle="Dual Frontiers of Science and Technology" width={''} height={'auto'} panelHeaderHeight={60} id='backgroundPage'>
       </MyPanel>
       <Row justify="space-between" style={{width: '100%'}} className='background-page'>
         <Col xs={24} sm={24} md={24} lg={24} className='left-div'>
