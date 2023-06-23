@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/InnovationInsights/static/css/main.5dd07992.css",
-    "main.js": "/InnovationInsights/static/js/main.cdf305c6.js",
+    "main.js": "/InnovationInsights/static/js/main.5a1fd565.js",
     "static/js/787.7f0f527c.chunk.js": "/InnovationInsights/static/js/787.7f0f527c.chunk.js",
     "static/media/demo-video.mp4": "/InnovationInsights/static/media/demo-video.7f8214cdae631e16ff9c.mp4",
     "static/media/case-study.mp4": "/InnovationInsights/static/media/case-study.73fd83c05ebe1cf753a3.mp4",
@@ -38,11 +38,11 @@
     "static/media/OpenSansLightItalic.ttf": "/InnovationInsights/static/media/OpenSansLightItalic.118a6c316d54c853e816.ttf",
     "index.html": "/InnovationInsights/index.html",
     "main.5dd07992.css.map": "/InnovationInsights/static/css/main.5dd07992.css.map",
-    "main.cdf305c6.js.map": "/InnovationInsights/static/js/main.cdf305c6.js.map",
+    "main.5a1fd565.js.map": "/InnovationInsights/static/js/main.5a1fd565.js.map",
     "787.7f0f527c.chunk.js.map": "/InnovationInsights/static/js/787.7f0f527c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5dd07992.css",
-    "static/js/main.cdf305c6.js"
+    "static/js/main.5a1fd565.js"
   ]
 }
