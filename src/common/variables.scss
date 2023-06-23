@@ -1,0 +1,62 @@
+// 0. font-family
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file);
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@include font('open-sans-extrabold', 'open-sans-extrabold.ttf');
+@include font('open-sans-bold', 'open-sans-bold.ttf');
+@include font('open-sans-bold-italic', 'OpenSansBoldItalic.ttf');
+@include font('open-sans-semi-bold', 'OpenSansSemibold.ttf');
+@include font('open-sans-regular', 'open-sans-regular.ttf');
+@include font('open-sans-regular-italic', 'OpenSansItalic.ttf');
+@include font('open-sans-light', 'OpenSansLight.ttf');
+@include font('open-sans-light-italic', 'OpenSansLightItalic.ttf');
+
+$open-sans-extrabold: 'open-sans-extrabold';
+$open-sans-bold: 'open-sans-bold';
+$open-sans-bold-italic: 'open-sans-bold-italic';
+$open-sans-semi-bold: 'open-sans-semi-bold';
+$open-sans-regular: 'open-sans-regular';
+$open-sans-regular-italic: 'open-sans-regular-italic';
+$open-sans-light: 'open-sans-light';
+$open-sans-light-italic: 'open-sans-light-italic';
+
+// 0. unified styles
+$header-font-size: 14px;
+$title-font-size: 16px;
+$subtitle-font-size: 14px;
+$plain-text-font-size: 14px;
+
+$subtitle-height: 22px;
+$subtitle-margin: 20px;
+$subtitle-antchor-width: 5px;
+
+$box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+
+// color
+$green-light: #c5d6d0;
+$green-regular: #609e90;
+$green-dark: #426f65;
+$red-light: #e9d1c0;
+$red-regular: #cfa495;
+$red-dark: #c49289;
+$blue-light: #c6d0d9;
+$blue-regular: #a2b6c3;
+$blue-bold: #65859a;
+$blue-dark: #718592;
+$blue-heavy: #0f293a;
+$black-base: #3b3b3b; // #0e1e29;
+
+$purple-10: #C6C1DC;
+// $purple-10: #fed9ca;
+$kellogg-purple: #4B1D86;
+$purple-80: #624D9C;
+$purple-60: #8073AE;
+$purple-40: #A89FC9;
+
+$header-height: 120px;

@@ -1,0 +1,36 @@
+@import "../../common/variables";
+
+.background-page {
+  width: 100%;
+  padding: 0 16%;
+
+  .left-div {
+    .abstract-text-div {
+      font-size: 14px;
+      font-family: $open-sans-light;
+      line-height: 1.6em;
+    }
+  }
+  .right-div {
+    padding: 32px;
+
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: nowrap;
+
+    .analysis-goal-div {
+      margin-left: 16px;
+    }
+
+    .img-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .img {
+        width: 80%;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,128 @@
+@import "../../common/variables";
+
+@media only screen and (max-width: 990px) {
+  #header-right-div {
+    display: none;
+  }
+}
+@media only screen and (min-width: 990px) {
+  #header-right-div-collapse {
+    display: none;
+  }
+}
+
+.ant-row {
+  .header-left-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    .logo {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+
+  .header-right-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .ant-anchor-link-title {
+      font-size: 14px;
+      font-family: $open-sans-semi-bold;
+      color: white;
+      letter-spacing: 2px;
+    }
+  }
+
+  .header-right-div-collapse {
+    display: flex;
+    justify-content: flex-end;
+    .menu {
+      font-size: 28px;
+      color: white;
+    }
+  }
+
+  .collapse-menu-div.active {
+    opacity: 1;
+    right: 0;
+  }
+
+  .collapse-menu-div {
+    opacity: 0;
+    width: 240px;
+    background-color: $purple-80;
+
+    position: absolute;
+    top: 0;
+    right: -240px;
+    padding: 8px 0;
+    z-index: 99;
+    box-shadow: 3px 3px 8px rgba(52, 52, 52, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .close-div {
+      height: 32px;
+      width: 100%;
+      padding: 0 8px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .menu {
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.5);
+          color: black;
+          transition: all 0.5s;
+        }
+      }
+    }
+    .collapse-menu-div-unit {
+      padding: 8px;
+      a {
+        letter-spacing: 2px;
+        color: white;
+          font-family: $open-sans-regular, 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+      }
+    }
+    transition: all .5s;
+  }
+
+  .header-right-div-collapse-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}
+.ant-layout-header {
+  width: 100%;
+  height: $header-height;
+  position: fixed;
+  top: 0px;
+
+  z-index: 100;
+
+  background-color: $purple-40;
+  // box-shadow: 0 0 5px rgba(8,28,50,.7);
+  box-shadow: 3px 3px 8px rgba(52, 52, 52, 0.2);
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.ant-divider-with-text.ant-divider-with-text {
+  margin: 0;
+}

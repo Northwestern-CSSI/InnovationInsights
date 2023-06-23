@@ -1,0 +1,198 @@
+@import "./common/variables";
+
+@media only screen and (max-width: 990px) {
+  .footer-div {
+    width: 100%;
+    height: 100%;
+    font-family: $open-sans-semi-bold, 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin: 8px 0 24px 0;
+      .logo-group {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .image-div {
+          margin-right: 32px;
+          height: 10vw; // 64px;
+          .image {
+            height: 100%;
+          }
+        }
+      }
+    }
+    .center {
+      margin: 24px 0;
+    }
+    .right {
+      margin: 24px 0 0 0;
+      .org-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .text-div {
+          margin: 2px 0;
+          font-size: 14px;
+          font-family: $open-sans-bold, 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 990px) {
+  .footer-div {
+    width: 100%;
+    height: 100%;
+    font-family: $open-sans-semi-bold, 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .left {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      .logo-group {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        .image-div {
+          margin-right: 32px;
+          height: 64px;
+          .image {
+            height: 100%;
+          }
+        }
+      }
+    }
+    .center {
+      width: 20%;
+    }
+    .right {
+      width: 40%;
+      .org-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        .text-div {
+          margin: 2px 0;
+          font-size: 14px;
+          font-family: $open-sans-bold, 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.content-div {
+  width: 100%;
+
+  .content {
+    // padding-left: 8%;
+    // padding-right: 8%;
+    margin-top: 72px;
+
+    // width: calc(100% - 2 * 8%);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.footer {
+  margin-top: 108px;
+  background-color: $purple-60;
+  width: 100%;
+  // height: 120px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.ant-layout-footer {
+  padding: 24px;
+}
+
+.overlay.active {
+  right: 0;
+  opacity: 1;
+}
+
+.overlay {
+  background: rgba(255,255,255,.7);
+  position: fixed;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
