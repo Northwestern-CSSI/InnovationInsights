@@ -1,5 +1,72 @@
 @import "../../common/variables";
 
+@media only screen and (max-width: 990px) {
+  .dataset-div {
+    margin-bottom: 32px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .img-div {
+      width: 80%;
+      margin-bottom: 16px;
+      .image {
+        width: 100%;
+      }
+    }
+    .text-div {
+      width: 80%;
+      margin-bottom: 16px;
+      // padding-left: 24px;
+      .title {
+        height: 24px;
+        font-size: 16px;
+        font-family: $open-sans-bold;
+      }
+      .intro {
+        font-size: 14px;
+        font-family: $open-sans-light;
+        line-height: 1.6em;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 990px) {
+  .dataset-div {
+    margin-bottom: 32px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .img-div {
+      width: 20%;
+
+      .image {
+        width: 100%;
+      }
+    }
+    .text-div {
+      width: 80%;
+      padding-left: 24px;
+
+      .title {
+        height: 24px;
+        font-size: 16px;
+        font-family: $open-sans-bold;
+      }
+      .intro {
+        font-size: 14px;
+        font-family: $open-sans-light;
+        line-height: 1.6em;
+      }
+    }
+  }
+}
+
 .framework-page {
   display: flex;
   flex-direction: column;
@@ -41,37 +108,8 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-
-    .dataset-div {
-      margin-bottom: 32px;
-
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-
-      .img-div {
-        width: 20%;
-
-        .image {
-          width: 100%;
-        }
-      }
-      .text-div {
-        width: 80%;
-        padding-left: 24px;
-
-        .title {
-          height: 24px;
-          font-size: 16px;
-          font-family: $open-sans-bold;
-        }
-        .intro {
-          font-size: 14px;
-          font-family: $open-sans-light;
-          line-height: 1.6em;
-        }
-      }
-    }
+    justify-content: center;
+    align-items: center;
   }
 
   .gnn-model-div {

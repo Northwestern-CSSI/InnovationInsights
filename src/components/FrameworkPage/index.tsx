@@ -33,9 +33,9 @@ const FrameworkPage: FC<FrameworkPageProps> = (props) => {
 
   const visualizationElementList: JSX.Element[] = textContent.frameworkPage.visualizationSystem.map((dataInfo, datasetIdx) => {
     return (
-      <div key={datasetIdx} className='visualization-div'>
+      <p key={datasetIdx} className='visualization-div'>
         {dataInfo}
-      </div>
+      </p>
     )
   })
 
