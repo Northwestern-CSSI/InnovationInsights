@@ -44,10 +44,12 @@
         justify-content: center;
         align-items: flex-start;
         .text-div {
-          margin: 2px 0;
+          width: 100%;
+          margin: 4px 0;
           font-size: 14px;
           font-family: $open-sans-bold, 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
           color: white;
+          text-align: left;
         }
       }
     }

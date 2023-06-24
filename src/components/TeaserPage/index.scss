@@ -65,14 +65,16 @@
         }
         .system-demo-button-div {
           .button {
-            width: 64px;
+            // width: 64px;
             height: 32px;
+            padding: 12px;
             border-radius: 6px;
             background-color: white;
             box-shadow: 3px 3px 8px rgba(26,26,26,.2);
+            color: rgb(59, 59, 59);
 
-            font-size: 14px;
-            font-family: $open-sans-light;
+            font-size: 12px;
+            font-family: $open-sans-regular;
 
             display: flex;
             flex-direction: row;

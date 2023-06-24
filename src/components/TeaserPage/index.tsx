@@ -45,7 +45,7 @@ const TeaserPage: FC<TeaserPageProps> = (props) => {
                 Bridge the ivory tower and the real world technology.
               </div>
               <div className='div-unit system-demo-button-div'>
-                <div className='button'>{`Demo`}</div>
+                <div className='button'>{`Demo (To Appear)`}</div>
               </div>
             </div>
           </Col>

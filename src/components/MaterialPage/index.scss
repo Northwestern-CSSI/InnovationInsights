@@ -6,4 +6,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .material-div {
+    font-size: 12px;
+    color: grey;
+    font-family: $open-sans-light, 'Open Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    a {
+      font-size: 12px;
+      color: grey;
+      font-family: $open-sans-light;
+    }
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    .supp-unit-div {
+      margin: 8px;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        width: auto;
+        height: 14px;
+        margin-left: 4px;
+      }
+      a {
+        margin-left: 4px;
+      }
+    }
+  }
 }

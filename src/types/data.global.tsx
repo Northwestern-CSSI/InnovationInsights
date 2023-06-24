@@ -9,6 +9,8 @@ import xiaoyuImgUrl from '../assets/6-about/circle/xiaoyu.png';
 import nanImgUrl from '../assets/6-about/circle/nan.png';
 import dashunImgUrl from '../assets/6-about/circle/dashun.png';
 
+import benImgUrl from '../assets/6-about/circle/ben.png';
+
 import kelloggImgUrl from '../assets/6-about/org/kellogg.png';
 import cssiImgUrl from '../assets/6-about/org/cssi.png';
 import tongjiImgUrl from '../assets/6-about/org/tongji.png';
@@ -58,9 +60,9 @@ export const textContent = {
   },
   aboutPage: {
     authorList: [
-      { author: 'Yifang Wang', affiliation: '[1, 2]', homepage: 'wangyifang.top', img: yifangImgUrl},
+      { author: 'Yifang Wang', affiliation: '[1, 2]', homepage: 'https://wangyifang.top', img: yifangImgUrl},
       { author: 'Yifan Qian', affiliation: '[1, 2]', homepage: 'https://yifanqian.com/', img: yifanImgUrl},
-      { author: 'Xiaoyu Qi', affiliation: '[3, 4]', homepage: '#', img: xiaoyuImgUrl},
+      { author: 'Xiaoyu Qi', affiliation: '[3, 4]', homepage: 'https://idvxlab.com/members.html', img: xiaoyuImgUrl},
       { author: 'Nan Cao', affiliation: '[3, 4]', homepage: 'https://nancao.org/', img: nanImgUrl},
       { author: 'Dashun Wang', affiliation: '[1, 2]', homepage: 'https://www.dashunwang.com/', img: dashunImgUrl},
     ],
@@ -69,6 +71,17 @@ export const textContent = {
       { img: cssiImgUrl, },
       { img: tongjiImgUrl, },
       { img: idvImgUrl, },
+    ]
+  },
+  ackPage: {
+    authorList: [
+      { author: 'Benjamin F. Jones', affiliation: '[1]', homepage: 'https://www.kellogg.northwestern.edu/faculty/directory/jones_benjamin_f.aspx', img: benImgUrl},
+    ],
+    orgList: [
+      // { img: kelloggImgUrl, },
+      // { img: cssiImgUrl, },
+      // { img: tongjiImgUrl, },
+      // { img: idvImgUrl, },
     ]
   }
 

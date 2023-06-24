@@ -67,7 +67,7 @@ const FrameworkPage: FC<FrameworkPageProps> = (props) => {
         <Col xs={24} sm={24} md={24} lg={24} >
           <div className='unit-div visualization-div'>
             <div className='subtitle'>
-              <div className='subtitle-text'>VISUAL ANALYTICS SYSTEM</div>
+              <div className='subtitle-text'>VISUALIZATION PLATFORM</div>
             </div>
             <div className='text-div'>{visualizationElementList}</div>
             <div className='img-div'>

@@ -5,14 +5,14 @@ import { textContent } from '../../types/data.global';
 import { Row, Col } from 'antd';
 import MyPanel from '../MyPanel';
 
-interface AboutPageProps {
+interface AckPageProps {
 }
 
-const AboutPage: FC<AboutPageProps> = (props) => {
+const AckPage: FC<AckPageProps> = (props) => {
   const {
   } = props
 
-  const aboutElementList: JSX.Element[] = textContent.aboutPage.authorList.map((researcherInfo, researcherIdx) => (
+  const aboutElementList: JSX.Element[] = textContent.ackPage.authorList.map((researcherInfo, researcherIdx) => (
     <div className='researcher-div' key={researcherIdx}>
       <div className='unit-div image-div'>
         <img className='image' src={researcherInfo.img} alt={researcherInfo.author} />
@@ -24,27 +24,27 @@ const AboutPage: FC<AboutPageProps> = (props) => {
     </div>
   ))
 
-  const orgElementList: JSX.Element[] = textContent.aboutPage.orgList.map((orgInfo, orgIdx) => (
-    <div className='org-div' key={orgIdx}>
-      <div className='unit-div image-div'>
-        <img className='image' src={orgInfo.img} alt={orgInfo.img} />
-      </div>
-    </div>
-  ))
+  // const orgElementList: JSX.Element[] = textContent.ackPage.orgList.map((orgInfo, orgIdx) => (
+  //   <div className='org-div' key={orgIdx}>
+  //     <div className='unit-div image-div'>
+  //       <img className='image' src={orgInfo.img} alt={orgInfo.img} />
+  //     </div>
+  //   </div>
+  // ))
 
   return (
     <>
-      <MyPanel viewTitle="Team" width={''} height={'auto'} panelHeaderHeight={60} id='aboutPage'>
+      <MyPanel viewTitle="Acknowledgement" width={''} height={'auto'} panelHeaderHeight={60} id='ackPage'>
       </MyPanel>
-      <Row justify="space-between" style={{width: '100%'}} className='about-page' id='aboutPage'>
-        <div className='about-div'>
+      <Row justify="space-between" style={{width: '100%'}} className='ack-page' id='ackPage'>
+        <div className='ack-div'>
           <div className='line line-one-div'>{aboutElementList.slice(0, 3)}</div>
           <div className='line line-two-div'>{aboutElementList.slice(3, 5)}</div>
-          <div className='org'>{orgElementList}</div>
+          {/* <div className='org'>{orgElementList}</div> */}
         </div>
       </Row>
     </>
   )
 }
 
-export default AboutPage;
+export default AckPage;

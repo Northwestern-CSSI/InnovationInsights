@@ -9,10 +9,11 @@ import InnovationInsightsPage from './components/InnovationInsightsPage';
 import FrameworkPage from './components/FrameworkPage';
 import ExamplePage from './components/ExamplePage';
 import AboutPage from './components/AboutPage';
+import AckPage from './components/AckPage';
 import MaterialPage from './components/MaterialPage';
 
-import cssiImgUrl from './assets/7-footer/cssi-horiz.png';
-import innovationinsightsImgUrl from './assets/7-footer/logo-horiz.png';
+import cssiImgUrl from './assets/8-footer/cssi-horiz.png';
+import innovationinsightsImgUrl from './assets/8-footer/logo-horiz.png';
 
 import { ConfigProvider } from 'antd';
 import { Layout } from 'antd';
@@ -45,6 +46,7 @@ function App() {
             <FrameworkPage />
             <ExamplePage />
             <AboutPage />
+            <AckPage />
             <MaterialPage />
           </div>
         </Content>
